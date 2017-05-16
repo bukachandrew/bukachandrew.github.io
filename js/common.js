@@ -1,8 +1,5 @@
 $(function() {
-		$(".atop-line ul li a").click(function() {
-		$("html, body").animate({"slow");
-		return false;
-	});
+
 	$(".arrow-b").click(function() {
 		$("html, body").animate({ scrollTop: $(".main-head").height()+120 }, "slow");
 		return false;
