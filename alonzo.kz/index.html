@@ -19,10 +19,10 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/header.min.css">
+
 	<link rel="stylesheet" href="js/swiper/swiper.min.css">
 	<link rel="stylesheet" href="css/fonts.min.css">
-
+	<link rel="stylesheet" href="css/header.min.css">
 
 
 </head>
@@ -42,7 +42,7 @@
 				</div>
 
 				<div class="col-sm-2 col-sm-offset-7 col-xs-3 col-xs-offset-3">
-					<a href="" class="header__contact m-button">Контакты</a>
+					<a href="#contact" class="header__contact m-button">Контакты</a>
 				</div>
 
 			</div>
@@ -326,7 +326,7 @@
 		</div>	
 	</section>
 
-	<section class="section-contact">
+	<section class="section-contact" id="contact">
 
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A23d86ee536dd86f3fd4ce167b44c194550c22c3efe0f10c25fe522928c172137&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
 
@@ -382,6 +382,7 @@
 	<div class="hidden"></div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-migrate-3.0.0.min.js"></script>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -413,6 +414,16 @@
                 $("ymaps").toggleClass('js-map-active');
                 return false;
             });
+
+		$(document).ready(function(){
+			// Плавный скролл по якорям
+			$('a[href^="#"]').click(function () { 
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				$('html').animate( { scrollTop: destination }, 1000 );
+				return false;
+		   });
+		});
   </script>
 
 	<!-- Load Scripts End -->
