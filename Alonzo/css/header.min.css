@@ -1,0 +1,382 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'MullerRegular', sans-serif;
+	overflow-x: hidden;
+	color: #3a3a3a;
+}
+.hidden{
+	display: none;
+}
+.l-grid{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.m-button{
+  border-radius: 30px;
+  font-family: 'MullerBold';
+  display: inline-block;
+}
+	.m-button:hover{
+		text-decoration: none;
+	}
+	.m-button--main{
+		background: #fff;
+		width: 240px;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 1em;
+		text-transform: uppercase;
+		margin-top: 80px;
+		color: #4458fa;
+	}
+		.m-button--main:hover,
+		.m-button--main:focus{
+			background-color: #4458fa;
+			text-decoration: none;
+			color: #fff;
+		}
+.section__title{
+		text-align: center;
+		font-family: 'MullerLight';
+		font-size: 3em;
+		margin: 115px 0 90px 0;
+}
+
+
+header{
+	background: url(../img/background.png) no-repeat center center;
+	background-size: cover;
+	background-position: top center;
+	min-height: 800px;
+	padding-top: 10px;
+	position: relative;
+}
+.logo{
+	margin: 0;
+}
+	.logo a{
+		background: url(../img/logo.png) no-repeat center center;
+	  display: block;
+	  width: 100%;
+	  height: 34px;
+	}
+
+.header__contact{
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  font-size: 0.714em;
+  color: #fff;
+}
+	.header__contact:hover{
+		color: #4458fa;
+		background: #fff;
+	}
+.l-header__section{
+	position: relative;
+}
+.header__title{
+	margin-top: 120px;
+	position: relative;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+	.header__title:after{
+		content: "";
+		width: 170px;
+		height: 10px;
+		background: #fff;
+		display: block;
+		bottom: 0;
+    position: absolute;
+	}
+	.header__title--main{
+		font-family: 'MullerBlack';
+		font-size: 7.143em;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0;
+		color: #fff;
+		text-shadow: 0.01em 0.08em 0.1em rgba(51, 51, 51, 0.4);
+	}
+		.header__title--main--opacity{
+			opacity: 0.5;
+			display: inline-block;
+		}
+	.header__title--secondary{
+		font-family: 'MullerExtraBold';
+		font-size: 5.143em;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0;
+		color: #fff;
+	}
+
+.header__text-desc{
+	font-family: 'MullerMedium';
+	font-size: 2em;
+	color: #fff;
+}
+
+.header__image{
+	position: absolute;
+	right: -130px;
+	top: 290px;
+}
+	.header__image--img{
+		width: 100%;
+	}
+
+.section-information{
+	background: url(../img/bg-sec1.jpg) center top;
+	background-repeat-x: no-repeat;
+  margin-top: -50px;
+  padding: 190px 0 150px 0; 
+}
+	.section-information__cell{
+		text-align: center;
+	}
+			.section-information__cell--icon{
+				background-position: center center;
+				background-repeat: no-repeat;
+				width: 130px;
+				height: 130px;
+				margin: 0 auto 25px;
+			}
+			.section-information__cell--print{
+				background-image: url(../img/print.png);
+			}
+			.section-information__cell--guarantee{
+				background-image: url(../img/guarantee.png);
+			}
+			.section-information__cell--card{
+				background-image: url(../img/card.png);
+			}
+		.section-information__cell--description{
+			font-family: 'MullerRegular';
+			font-size: 1.143em;
+		}
+	.section-information__text{
+		font-family: 'MullerRegular';
+		text-align: center;
+		font-size: 1.714em;
+		margin-top: 90px;
+	}
+
+.section-catalog{
+	background: #455bfa; /* Old browsers */
+	background: -moz-linear-gradient(left, #455bfa 1%, #5ed6ee 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #455bfa 1%,#5ed6ee 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #455bfa 1%,#5ed6ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#455bfa', endColorstr='#5ed6ee',GradientType=0 ); /* IE6-9 */
+}
+	.section-catalog__title{
+		color: #fff;
+	}
+
+.swiper-container {
+    height: 550px;
+}
+.swiper-wrapper{
+		position: relative;
+}
+	.swiper-slide-block{
+		width: 900px;
+		background: #fff;
+		padding: 55px 40px;
+		position: relative;
+	}
+	.swiper-slide__image--main,
+	.swiper-slide__image--secondary{
+		text-align: center;
+	}
+	.swiper-slide-description{
+		position: absolute;
+		background: #fff;
+		left: 55%;
+		box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		padding: 35px 40px;
+	}
+		.swiper-slide-description-title{
+			 font-family: 'MullerLight';
+			 font-size: 1.714em;
+			 margin: 0 0 30px 0;
+		}
+		.swiper-slide-description-price{
+			color: #4458fa;
+		}
+			.swiper-slide-description-price-from{
+				font-family: 'MullerRegular';
+				font-size: 1.286em;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.swiper-slide-description-price-num{
+				font-family: 'MullerBold';
+				font-size: 1.857em;
+				display: inline-block;
+			}
+		.swiper-slide-description-text{
+			font-family: 'MullerLight';
+			color: #818181;
+			margin-top: 35px;
+			font-size: 1.143em;
+		}	
+.l-button{
+	text-align: center;
+}
+	.l-button .header__button{
+		box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+	}
+
+.swiper-button-prev,
+.swiper-button-next{
+	background-image: url(../img/arrow.png);
+  background-size: auto;
+  border: 3px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 20px;
+}
+.swiper-button-next{
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	border-radius: 20px 0;
+}
+
+.section-advantages__cell--icon{
+	width: 90px;
+	height: 90px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #4458fa;
+	border-radius: 100%;
+}
+	.section-advantages__cell--support{
+			background-image: url(../img/icon-manager.png);
+	}
+	.section-advantages__cell--size{
+			background-image: url(../img/icon-print.png);
+	}
+	.section-advantages__cell--design{
+			background-image: url(../img/icon-dasing.png);
+	}
+	.section-advantages__cell--cards{
+			background-image: url(../img/icon-cards.png);
+	}
+
+.section-advantages{
+		padding-bottom: 120px;
+	}
+	.section-advantages__cell--title{
+		font-family: 'MullerBold';
+		font-size: 1em;
+	}
+	.section-advantages__cell--description{
+		font-size: 1em;
+	}
+
+.section-reviews{
+	background-color: #f7fdfe;
+	padding-bottom: 120px;
+}
+.swiper-reviews .swiper-wrapper{
+	width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.l-reviews-slide{
+	padding-top: 60px;
+	width: 33.33333333% !important;
+}
+.swiper-reviews-slide{
+	background-color: #fff;
+	font-size: 1em;
+	text-align: center;
+	padding: 45px 30px;
+}
+	.swiper-reviews-slide--img{
+		border-radius: 100%;
+    margin-bottom: 45px;
+    margin-top: -100px;
+	}
+	.swiper-reviews-slide--title{
+		font-family: 'MullerBold';
+		margin-bottom: 5px;
+	}
+	.swiper-reviews-slide--profasion{
+		font-family: 'MullerRegular';
+		color: #999999;
+		margin-bottom: 20px;
+	}
+	.swiper-reviews-slide--text{
+		font-family: 'MullerRegular';
+	}
+.section-contact{
+	position: relative;
+}
+.l-position{
+	position: absolute;
+  width: 100%;
+  top: 0;
+  background: rgba(68, 88, 250, 0.5);
+  height: 100%;
+}
+.js-map-active{
+	position: relative;
+	z-index: 1;
+}
+	.section-contact__title{
+		color: #fff;
+	}
+	.section-contact__button{
+
+	}
+	.section-contact__button--map{
+		padding-left: 30px;
+		background-image: url(../img/icon-map.png);
+		background-repeat: no-repeat;
+		background-position: 25px center;
+	}
+	.section-contact__button--map:hover,
+	.section-contact__button--map:focus{
+		background-image: url(../img/icon-map-hover.png);
+	}
+	.section-contact__contact-info{
+		margin-top: 180px;
+	}
+	.section-contact__contact-info--icon{
+		width: 32px;
+    min-height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+	}
+	.section-contact__contact-info--adres{
+		background-image: url(../img/icon-adres.png);
+	}
+	.section-contact__contact-info--phone{
+		background-image: url(../img/icon-phone.png);
+	}
+	.section-contact__contact-info--meil{
+		background-image: url(../img/icon-mail.png);
+	}
+	.section-contact__contact-info--text{
+		color: #fff;
+		font-family: 'MullerRegular';
+		font-size: 1.143em;
+	}
+
+footer{
+	background-color: #282c48;
+	padding: 20px 0 25px 0;
+}
