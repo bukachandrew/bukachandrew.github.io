@@ -1,3 +1,3 @@
  $(document).ready(function () {
- $('body').css("display","none");
+ #$('body').css("display","none");
  });
