@@ -1,1 +1,1 @@
-jQuery(body).css("display", "none");
+//jQuery(body).css("display", "none");
